@@ -42,7 +42,11 @@ MODIFY title VARCHAR(150) NOT NULL,
 MODIFY ISBN VARCHAR(13) UNIQUE,
 MODIFY author_id INT NOT NULL,
 ADD published_year YEAR NOT NULL,
+ADD genre VARCHAR(50) NOT NULL,
 ADD copies_available INT NOT NULL; 
+
+ALTER TABLE books
+ADD genre VARCHAR(50) NOT NULL;
 
 
 CREATE TABLE borrowings (
@@ -56,6 +60,8 @@ CREATE TABLE borrowings (
 )
 
 DROP TABLE authors;
+
+DROP TABLE books;
 
 DESCRIBE authors;
 
