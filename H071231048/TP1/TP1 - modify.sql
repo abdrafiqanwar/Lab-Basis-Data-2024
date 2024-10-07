@@ -13,12 +13,17 @@ author_id int,
 FOREIGN KEY (author_id) REFERENCES authors(id)
 );
 
+ALTER TABLE books
+ADD COLUMN 
 
 alter table authors
-add column nationality varchar(50);
+modify column nationality varchar(50) NOT NULL ;
 
 alter table books
 ADD CONSTRAINT unique_isbn UNIQUE (isbn);
+
+ALTER TABLE books
+ADD COLUMN published_year YEAR, ADD COLUMN genre VARCHAR(50), ADD COLUMN copies_avaliable INT;
 
 desc authors;
 desc books;

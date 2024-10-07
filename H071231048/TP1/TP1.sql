@@ -49,5 +49,4 @@ CREATE TABLE borrowings(
    FOREIGN KEY (book_id) REFERENCES books(id)
 );
 
-
 DESC borrowings;
