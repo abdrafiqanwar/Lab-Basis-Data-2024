@@ -110,8 +110,8 @@ SELECT
 	c.customerName 'Nama Pelanggan',
 	p.amount 'Total Pembayaran'
 FROM employees e
-JOIN customers c
-	ON c.salesRepEmployeeNumber = E.employeeNumber 
+	JOIN customers c
+		ON c.salesRepEmployeeNumber = E.employeeNumber 
 JOIN payments p
 	USING(customerNumber)
 WHERE (p.amount > 100000)
