@@ -10,7 +10,7 @@ VALUES ('Tere Liye', 'Indonesian'), ('J. K Rowling', 'British'), ('Andrea Hirata
 
 INSERT INTO books (ISBN, title, author_id, published_year, copies_available, genre) 
 VALUES ('7040289780375', 'Ayah', 3, 2015, 15, 'Fiction'), 
-('9780375704025', 'Bumi',1, 2014,5, 'Fantasy'), 
+('9780375704025', 'Bumi',1, 2014,5, 'Fantasy'),
 ('8310371703024', 'Bulan', 1, 2015 , 3, 'Fantasy' ), 
 ('9780747532699', "Harry Potter and the Philosopher's Stone", 2, 1997, 10, ''),
 ('7210301703022', 'The Running Grave', 2, 2016, 11, 'Finction');
